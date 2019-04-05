@@ -1,0 +1,139 @@
+<!DOCTYPE>
+<html>
+
+
+
+<head> <font  face="Cooper Black" size="31" color="Orange" class="text-center">Welcome</font>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<style>
+div{
+  background-color: lightgrey;
+  width: 300px;
+  border: 25px solid Tomato;
+  padding: 25px;
+  margin: 25px;
+  text-orientation: center;
+}
+</style>
+
+<script>
+	//Javascript
+function formValidate()
+{
+    var x=document.forms["myform"]["fname"].value;
+    
+    if (x=="@"| x=="#" | x=="$" | x=="%" | x=="&")
+      {alert("Special Symbols are not allowed");
+       return false;
+      }
+     else if (x=="")
+      {alert("Feild cant be empty");
+       return false;
+      }
+    
+}
+function refreshform()
+{
+document.getElementById("myform").reset(); 
+}
+</script>
+
+
+
+
+
+</head>
+
+
+
+<body background="20.png">
+
+<h1><font face="Cooper Black" size="5" color="white">Register Yourself For Techligent</font></h1>
+<p><font face="Cooper Black" size="3" color="white">
+
+
+
+<form id="myform" name="myform"  style="padding: 55px">
+
+
+FirstName       :   <input type="text" name="fname">
+ <input type="submit" value="Submit" onclick="return formValidate()" method="post">
+
+<br>
+<br>
+<br>
+LastName        :   <input type="text" name="LastName">
+<br>
+<br>
+<br>
+Gender          :   <input type="radio" name="gender" value="Male">Male    
+                 <input type="radio" name="gender" value="female">Female<br>
+<br>
+<br>
+<br>
+College Name    :  <input list="college" name="college">
+                <datalist id="college">
+<option value="Pccoe,nigdi">
+<option value="PccoeR,Ravet">
+<option value="NMIT">
+<option value="MIT,kohrud">
+<option value="COEP,Pune">
+<option value="PICT,katraj">
+<option value="Commins">
+</datalist>
+<br>
+<br>
+<br>
+Event Name     : <select>
+           <option value="Codex">Codex</option>
+           <option value="Contraption">Contraption</option>
+	   <option value="Tresure Hunt">Tresure Hunt</option>
+	   <option value="DBug the Bugs">DBug the Bugs</option>
+	   <option value="Fuge">Fuge</option>
+	   <option value="SqaudGoals">SqaudGoals</option>
+	   <option value="Marvel">Marvel</option>
+           </select>
+<br>
+<br>
+<br>
+Suggestons     :<br>
+                    <textarea name="comment" rows="10" cols="30"></textarea>
+<br>
+<br>
+<br>
+Pick your date :
+<select name="date" size="3">
+<option value="20/1/19">20 Jan</option>
+<option value="21/1/19">21 Jan</option>
+<option value="22/1/19">22 Jan</option>
+<option value="23/1/19">23 Jan</option>
+<option value="24/1/19">24 Jan</option>
+</select>
+<br>
+<br>
+<br>
+
+
+
+</font>
+<input type="submit" value="Submit">
+<br>
+<br>
+<br>
+<input type="button" onclick="refreshform()" value="reset form">
+
+
+
+<div>
+This is event organized by PCCOE.<br> 
+We you want to register then<br> link is given below.<br>
+for more contact:<br>
+xyz:1454546656
+</div>
+
+
+
+</form>
+</p>
+</body>
+</html>
